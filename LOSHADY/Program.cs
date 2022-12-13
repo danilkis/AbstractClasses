@@ -18,10 +18,10 @@ namespace LOSHADY
             Thread myThread4 = new Thread(new ThreadStart(MoveDaDog));
             myThread1.Start(); // запускаем поток myThread1
             myThread2.Start(); // запускаем поток myThread2
-            if(!myThread1.Join(5000)) { // or an agreed resonable time
+            if(!myThread1.Join(10000)) { // or an agreed resonable time
                 myThread1.Abort();
             }
-            if(!myThread2.Join(5000)) { // or an agreed resonable time
+            if(!myThread2.Join(1000)) { // or an agreed resonable time
                 myThread2.Abort();
             }
             if (!myThread1.IsAlive && !myThread2.IsAlive)
@@ -37,13 +37,12 @@ namespace LOSHADY
                 foreach (var dog in dogs)
                 {
                     var randomrandom = new Random();
-                    Thread.Sleep(300);
                     switch (randomrandom.Next(1,5))
                     {
                         case 1: // Right
                         {
                             var randRes = randomrandom.Next(5);
-                            Helper.Place('‍', dog.X, dog.Y,ConsoleColor.Black);
+                            Helper.Place(' ', dog.X, dog.Y,ConsoleColor.Black);
                             if (dog.X + randRes <= 200)
                             {
                                 int dx = dog.X + randRes;
@@ -59,7 +58,7 @@ namespace LOSHADY
                             if (dog.X - randRes >= 200)
                             {
                                 int dx = dog.X - randRes;
-                                Helper.Place('‍', dog.X, dog.Y,ConsoleColor.Black);
+                                Helper.Place(' ', dog.X, dog.Y,ConsoleColor.Black);
                                 dog.Move(dx, dog.Y);
                             }
 
@@ -72,7 +71,7 @@ namespace LOSHADY
                             if (dog.Y + randRes <= 200)
                             {
                                 int dy = dog.Y + randRes;
-                                Helper.Place('‍', dog.X, dog.Y,ConsoleColor.Black);
+                                Helper.Place(' ', dog.X, dog.Y,ConsoleColor.Black);
                                 dog.Move(dog.X, dy);
                             }
 
@@ -85,7 +84,7 @@ namespace LOSHADY
                             if (dog.Y - randRes >= 200)
                             {
                                 int dy = dog.Y - randRes;
-                                Helper.Place('‍', dog.X, dog.Y,ConsoleColor.Black);
+                                Helper.Place(' ', dog.X, dog.Y,ConsoleColor.Black);
                                 dog.Move(dog.X, dy);
                             }
 
@@ -103,7 +102,7 @@ namespace LOSHADY
         public static List<Monster> dogs = new List<Monster>();
         private static void BornRandom()
         {
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 5000; i++)
             {
                 Monster monster = null;
                 Random rnd = new Random();

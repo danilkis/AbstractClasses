@@ -5,3 +5,10 @@ C:\Users\danya\RiderProjects\LOSHADY\LOSHADY\obj\Debug\LOSHADY.csproj.SuggestedB
 C:\Users\danya\RiderProjects\LOSHADY\LOSHADY\obj\Debug\LOSHADY.csproj.CoreCompileInputs.cache
 C:\Users\danya\RiderProjects\LOSHADY\LOSHADY\obj\Debug\LOSHADY.exe
 C:\Users\danya\RiderProjects\LOSHADY\LOSHADY\obj\Debug\LOSHADY.pdb
+C:\Users\danya\RiderProjects\AbstractClasses\LOSHADY\bin\Debug\LOSHADY.exe
+C:\Users\danya\RiderProjects\AbstractClasses\LOSHADY\bin\Debug\LOSHADY.pdb
+C:\Users\danya\RiderProjects\AbstractClasses\LOSHADY\obj\Debug\LOSHADY.csproj.AssemblyReference.cache
+C:\Users\danya\RiderProjects\AbstractClasses\LOSHADY\obj\Debug\LOSHADY.csproj.SuggestedBindingRedirects.cache
+C:\Users\danya\RiderProjects\AbstractClasses\LOSHADY\obj\Debug\LOSHADY.csproj.CoreCompileInputs.cache
+C:\Users\danya\RiderProjects\AbstractClasses\LOSHADY\obj\Debug\LOSHADY.exe
+C:\Users\danya\RiderProjects\AbstractClasses\LOSHADY\obj\Debug\LOSHADY.pdb

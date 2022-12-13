@@ -19,7 +19,7 @@ namespace LOSHADY
             (X, Y, Kg) = (x, y, weight);
             if (weight > 40)
                 Color = ConsoleColor.Gray;
-        
+
             Helper.Place(Face, x, y, Color);
         }
 
